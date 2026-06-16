@@ -53,6 +53,6 @@ Chaque membre possède sa propre page portfolio, accessible depuis l’index.
 
 
 ## 📄 Licence  
-J'ai la flemme de trouver une liscence...
+J'ai la flemme de trouver une licence...
 
 
