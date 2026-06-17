@@ -1,7 +1,7 @@
-# 📘 **README – Nos‑Portfolio (Projet EPTITECH)**
+# 📘 **README – Nos‑Portfolio (Projet EPITECH)**
 
 ## 🎯 Présentation  
-**Nos‑Portfolio** est un projet réalisé dans le cadre d’EPTITECH.  
+**Nos‑Portfolio** est un projet réalisé dans le cadre d’EPITECH.  
 L’objectif : créer un **portfolio web complet**, moderne et responsive, permettant à chaque membre de l’équipe de présenter son identité, ses compétences et ses projets.
 
 Le site est développé en **HTML / CSS / JavaScript**, avec une structure simple, propre et maintenable.
