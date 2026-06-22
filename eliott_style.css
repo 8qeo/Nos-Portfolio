@@ -1,0 +1,10 @@
+    /* Change la couleur de ton titre principal en rouge ou bleu */
+header h1 {
+    color: #db3131;
+}
+/* Change la couleur de fond de ta page */
+body {
+    background-color: #000000;
+    /* Change la couleur du texte en blanc */
+    color: #e3dcdc;
+}
