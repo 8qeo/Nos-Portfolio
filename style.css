@@ -53,7 +53,7 @@ header a {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    filter: brightness(10%);
+    filter: brightness(40%);
 }
 body {
     overflow-x: hidden;
