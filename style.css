@@ -44,6 +44,7 @@ header a {
     margin-top:auto;
 }
 .background {
+    filter: brightness(65%);
     position: fixed;
     top: 0;
     left: 0;
@@ -53,7 +54,6 @@ header a {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    filter: brightness(30%);
 }
 body {
     overflow-x: hidden;
@@ -97,7 +97,7 @@ button{
     border: 1px solid grey;
     border-radius: 10px;
     background:transparent;
-    backdrop-filter: blur(70px);
+    backdrop-filter: blur(10px);
     box-shadow: 2px black;
     width: 300px;
     color: white;
