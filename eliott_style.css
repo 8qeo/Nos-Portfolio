@@ -1,10 +1,82 @@
     /* Change la couleur de ton titre principal en rouge ou bleu */
 header h1 {
-    color: #db3131;
+    color: #ffffff;
 }
-/* Change la couleur de fond de ta page */
+/* Change la couleur de fond de la page */
 body {
-    background-color: #000000;
-    /* Change la couleur du texte en blanc */
-    color: #e3dcdc;
+    background-color: #ffffff;
+    /* Change la couleur du texte */
+    color: #000000;
+}
+
+/*change la taille de l'image ia-image*/
+#ia-image {
+  width: 35%; /* ou une valeur fixe comme 300px */
+  height: auto;
+}
+/*change la taille de l'image cybersecurity-image*/
+#cybersecurity-image {
+  width: 35%; 
+  height: auto;
+}
+/*change la taille de l'image arduino-image*/
+#arduino-image {
+  width: 35%; 
+  height: auto;
+}
+/*change la taille de l'image html-css-image*/
+#html-css-image {
+  width: 25%;
+  height: auto;
+}
+
+/*deco bouttons*/
+button {
+  background-color: #ffffff;
+  color: rgb(255, 5, 5);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/*masque les liens mais les affiches des que l'on passe la souris dessus*/
+button:hover {
+  background-color: #c5c5c5;
+}   
+
+a {
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #000000;
+}
+
+/*immage de fond*/
+body {
+    background-image: url("professionalisme.jpg");
+    background-size: cover;      /* Remplit l'écran en coupant les excès */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition */
+    background-attachment: fixed; /* Le fond reste fixe au scroll (optionnel) */
+}   
+
+/*mettre les espacement avec les "id=" */
+#cybersecurity-button {
+    margin: 40px;
+}
+#arduino-button {
+    margin: 40px;
+}
+#html-css-button {
+    margin: 40px;
+}
+#java-button {
+    margin: 40px;
 }
