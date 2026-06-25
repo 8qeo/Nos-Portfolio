@@ -1,13 +1,6 @@
- // Compteur de clics personnalisé
-let nbLikes = 0;
-const boutonLike = document.getElementById("mon-bouton-like");
+//mode sombre
+const btn = document.getElementById("darkModeBtn");
 
-if (boutonLike) {
-    boutonLike.addEventListener("click", () => {
-        nbLikes = nbLikes + 1;
-        boutonLike.textContent = "❤ J'aime (" + nbLikes + ")";
-
-    });
-}
-
-//buton IA
+btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});

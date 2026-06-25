@@ -1,50 +1,125 @@
-    /* Change la couleur de ton titre principal en rouge ou bleu */
-header h1 {
-    color: #ffffff;
-}
-/* Change la couleur de fond de la page */
-body {
-    background-color: #ffffff;
-    /* Change la couleur du texte */
+/*PS: je me suis fais chi*er à mettre h1 sous #titre-h1, je sais mtnt cmmnt faire mais je peux juste laisser h1 (voir ligne 18,19,20,...) */
+
+/* Change la couleur du titre en blanc */
+#titre-h1 {
     color: #000000;
+    position: relative;
+    z-index: 2
+}
+
+/*change la couleur du titre selon le mode sombre*/
+.dark-mode #titre-h1 {
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+    
+/* Change le texte principal*/
+#txt {    
+  color: #000000;
+  position: relative;
+  z-index: 2;
+  font-size: 1.1rem; /*rem = modifiquation par rapport à la taille/défaut (16px = 1rem)*/
+  font-family:"Inter", Arial, sans-serif;
+}
+footer {
+  color: #000000;
+  position: relative;
+    z-index: 2;
+}
+
+/* Change la couleur du texte selon le dark mode*/
+.dark-mode #txt {    
+  color: #ffffff;
+  position: relative;
+    z-index: 2;
+}
+.dark-mode footer {
+  color: #ffffff;
+  position: relative;
+    z-index: 2;
 }
 
 /*change la taille de l'image ia-image*/
 #ia-image {
   width: 35%; /* ou une valeur fixe comme 300px */
   height: auto;
+  position: relative;
+    z-index: 2;
 }
 /*change la taille de l'image cybersecurity-image*/
 #cybersecurity-image {
   width: 35%; 
   height: auto;
+  position: relative;
+    z-index: 2;
 }
 /*change la taille de l'image arduino-image*/
 #arduino-image {
   width: 35%; 
   height: auto;
+  position: relative;
+    z-index: 2;
 }
 /*change la taille de l'image html-css-image*/
 #html-css-image {
   width: 25%;
   height: auto;
+  position: relative;
+    z-index: 2;
 }
 
-/*deco bouttons*/
+/*deco boutons par défauts*/
 button {
-  background-color: #ffffff;
-  color: rgb(255, 5, 5);
+  background-color: #ffffffc5;
+  color: rgb(0, 0, 0);
   padding: 12px 24px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  position: relative;
+    z-index: 2;
 }
 
-/*masque les liens mais les affiches des que l'on passe la souris dessus*/
+/*deco boutons par défauts black mode*/
+.dark-mode button {
+  background-color: #000000c5;
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+    z-index: 2;
+}
+/*déco boutons id="accueil"*/
+#accueil {
+  padding: 16px 26px;
+  position: relative;
+    z-index: 2;
+}
+#accueil:hove {
+  background-color:#c5c5c5c5;
+  position: relative;
+    z-index: 2;
+}
+
+/*déco boutons id="accueil" dark mode*/
+.dark-mode #accueil {
+  padding: 16px 26px;
+  position: relative;
+    z-index: 2;
+}
+
+/*masque les liens en noir (les boutons de base étants rouge tout les <a> sont noir)*/
 button:hover {
-  background-color: #c5c5c5;
+  background-color: #c5c5c5c5;
+  position: relative;
+    z-index: 2;
 }   
 
 a {
@@ -52,31 +127,103 @@ a {
     font-family: Arial, sans-serif;
     text-decoration: none;
     transition: 0.3s;
+    position: relative;
+    z-index: 2;
 }
 
-a:hover {
-    color: #000000;
+
+/*masque les liens en blanc avec le dark mode*/
+.dark-mode button:hover {
+  background-color: #00000066;
+  position: relative;
+    z-index: 2;
+}   
+
+.dark-mode a {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
 }
 
-/*immage de fond*/
+/*immage de (fond normal+mode sombre)*/
 body {
     background-image: url("professionalisme.jpg");
     background-size: cover;      /* Remplit l'écran en coupant les excès */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Évite la répétition */
     background-attachment: fixed; /* Le fond reste fixe au scroll (optionnel) */
-}   
+    position: relative;
+}
+#overlay {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+    z-index: 1; /*z-index sert à définir une position calque, ex: z-index: 1 = dessous, 2 = middle et 3 = au dessus de tout */
+}
 
-/*mettre les espacement avec les "id=" */
+/*black mode background (le .dark-mode est une variable qui fait que quand le bouton dark mode est activé #overlay devient + sombre*/
+.dark-mode #overlay {
+    opacity: 0.4;
+}
+
+/*marge des boutons html */
+#ia-button {
+  transform: translate(800px,-350px)
+}
 #cybersecurity-button {
-    margin: 40px;
-}
-#arduino-button {
-    margin: 40px;
-}
-#html-css-button {
-    margin: 40px;
+  transform: translate(635px,-275px)
 }
 #java-button {
-    margin: 40px;
+    transform: translate(450px,-200px);
+}
+#arduino-button {
+    transform: translate(355px,-120px)
+}
+#html-css-button {
+    transform: translate(240px,-40px)
+}
+
+
+/*marge dark mode*/
+#darkModeBtn {
+  transform: translate(1120px,-60px); /*indique une transformation de l'axe X de 1120px et de l'axe Y de px (on peut aussi faire translateX(...px) ou translateY(...px) pour changer qu'un seul axe*/
+}
+
+/*Parametre de <h(x)>*/
+h2 {
+  font-size: 1.6rem;/*"A propos de moi"*/
+  font-family:"Inter", Arial, sans-serif;
+}
+h3 {
+  font-size: 1.3rem;/*mes passions*/
+  font-family:"Inter", Arial, sans-serif;
+}
+h4 {
+  font-size: 1.3rem;/*mes projets*/
+  font-family:"Inter", Arial, sans-serif;
+}
+h5 {
+  font-size: 1.6rem;/*mon stage à epitech*/
+  font-family:"Inter", Arial, sans-serif;
+  position: relative;
+  top: -390px;
+  transform: translateX(717px);
+}
+#h5txt {
+  font-size: 1.1rem;/*pendant ... sujet (c le txt en dessous de h5*/
+  font-family:"Inter", Arial, sans-serif;
+  position: relative;
+  top: -405px;
+  transform: translateX(717px);
+}
+footer {
+  font-size: 0.9rem;/*mon stage à epitech*/
+  font-family:"Inter", Arial, sans-serif;
+  transform: translate(0,-15px)
 }
