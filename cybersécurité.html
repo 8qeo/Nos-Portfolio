@@ -1,27 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mon Portfolio - [Ton Nom]-/title>
-<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style2.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+
 </head>
+
 <body>
-<header>
-<h1> Bienvenue sur le site de [Ton Prénom] !</h1>
-<p><a href="index.html">← Retour à l'accueil</a></p>
-</header>
-<main>
----- Ta présentation -->
-<section>
-<h2>À propos de moi</h2>
-<p>Écris ici quelques phrases sur toi, tes passions et ce que tu aimes faire.</p>
-</main></section>
+
+<div class="background"></div>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="remy.html">ACCUEIL</a></li>
+        <li><a href="cybersécurité.html">Cybersécurité</a></li>
+        <li><a href="intelligence_artificielle.html">Intelligence artificielle</a></li>
+        <li><a href="hard_ware.html">Hardware</a></li>
+        <li><a href="autre.html">Autre</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+
+    <section class="left-text">
+        <h2>Osint et conférence</h2>
+
+        <p>
+            Lors de mon stage, nous avons assisté à une intervention animée par Gabriel Madelaine-Toublanc,
+            qui nous a présenté le métier de pentester. Il nous a expliqué en quoi consiste ce métier,
+            son rôle dans la cybersécurité et les différentes méthodes utilisées pour tester la sécurité d'un système informatique.
+
+            <br><br>
+
+            Pour illustrer ses explications, il nous a montré plusieurs techniques de pentest sur une réplique du site Doctolib
+            qu'il avait lui-même créée à des fins pédagogiques.
+
+            <br><br>
+
+            Nous avons également participé à une activité d’OSINT (Open Source Intelligence).
+            L’objectif était de localiser différents endroits à partir de photographies en analysant les indices visibles.
+        </p>
+    </section>
+
+<section class="center-image">
+    <div class="image-stack">
+        <img src="OSINT (1).png" alt="OSINT" class="img-top">
+        <img src="images.jpg" alt="OSINT" class="img-bottom">
+    </div>
+</section>
+
+<section class="right-text">
+        <h2>décryptage et avis </h2>
+        <p>
+            Nous avons également participé à une activité de décryptage, qui m’a permis d’apprendre plusieurs notions importantes liées à la cryptographie. Au cours de cet atelier, nous avons découvert différentes méthodes de chiffrement, , ainsi que la manière de décoder des messages codés à l’aide de techniques efficaces . Cette activité nous a montré comment les informations peuvent être protégées et comment il est possible de les retrouver en comprenant les bonnes méthodes de déchiffrement.
+            <br><br>
+            J’ai particulièrement apprécié cette partie du stage consacrée à la cybersécurité, car elle était à la fois ludique et très enrichissante. Elle m’a permis de mieux comprendre les bases de la sécurité informatique tout en participant à des exercices concrets et intéressants.
+        </p>
+</section>
+
 </main>
+
 <footer>
-<p>© 2026 - [Ton Nom] | Fait avec passion</p>
+    <p class="jsp">© 2026 - AL-SUGHAYYR | Fait avec passion</p>
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
