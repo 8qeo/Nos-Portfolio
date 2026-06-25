@@ -50,7 +50,7 @@ header a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('BCO.8e82e667-209c-4ace-9527-c3fe4a85270c.webp');
+    background-image: url('photo-1485470733090-0aae1788d5af.avif');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -93,18 +93,33 @@ body {
 
 button{
     font-family: "Bebas Neue", sans-serif;
-    font-size: 33px;
+    font-size: 53px;
     border: 1px solid grey;
     border-radius: 10px;
     background:transparent;
     backdrop-filter: blur(10px);
     box-shadow: 2px black;
-    width: 300px;
+    width: 473px;
+    height: 150px;
+    padding: 15px;
     color: white;
-    margin-bottom:20%;
+
+    margin:0px;
+    margin-top:20% ;
+    white-space: nowrap;
     text-align: center;
+
 }
 main {
     display: flex;
     gap: 4px;
+}
+
+.jsp {
+
+    color: grey;
+    text-align: center;
+    margin-top: 10%;
+
+
 }
