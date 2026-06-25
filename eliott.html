@@ -11,34 +11,51 @@
     <link rel="stylesheet" href="eliott_style.css">
 
     <div class="skills-container">
-
+    </div>
     </head>
         <body>
             <header>
-                <center><h1> Bienvenue sur le site d'Eliott !</h1></center>
-                <button type="button"><p><a href="index.html">← Retour à l'accueil</a></p></button>
+                <!--le <center> centre <h1> et <div...> et </div> encadre le titre en tant que "titre-h1"-->
+                <center>
+            <div id="titre-h1">
+                <h1> Bienvenue sur le site d'Eliott !</h1>
+            </div>
+                </center>
+                
+                <!--Bouton retour à l'index-->
+                <button id="accueil" type="button"><a href="index.html">← Retour à l'accueil</a></button>
+                
+                <!--bouton mode noir-->
+            <div id="overlay"></div>
+            <button id="darkModeBtn">
+            🌙 Mode sombre
+            </button>
             </header>
+
 </main>
 <section>
-    <h2>À propos de moi :</h2>
+    <div id="txt">
+    <h2><strong>À propos de moi :</strong></h2>
     
         <h3><strong>Mes Passions :</strong></h3>
         
     <ul>
-            <li><strong>En Foot :</strong></li>
-            <p>Je supporte le FC Barcelona, aussi mon joueur préféré est Neymar</p>
+            <li><strong>Le Foot :</strong></li>
+            <p>Je supporte le FC Barcelona, aussi mon joueur favoris est Neymar Junior.</p>
             
-            <li><strong>En Jeux Vidéos :</strong></li>
-            <p>Je joue beaucoup à CS2 qui d'ailleurs et mieux que Valorant, je suis pas prêt au débats</p>
+            <li><strong>Les Jeux Vidéos :</strong></li>
+            <p>Je joue beaucoup à Counter Strike 2 ainsi que Léthal Company.</p>
     </ul>
   
     <h4><strong>Mes Projets :</strong></h4>
         <p>Je souhaite travailler dans le secteur de la cybersécurité en tant que ManagerSOC</p>
 </section>
-
+</div>
 <section>
-    <h1><strong>Mon Stage à Epitech :</strong></h1>
-        <p><strong>Pendant mon stage à Epitech, j'ai travaillé sur différents voie voici quelque exemples de journées:</strong></p>
+    <div id="txt">
+    <h5><strong>Mon Stage à Epitech :</strong></h5>   
+    <div id ="h5txt"><p>Pendant mon stage à Epitech, j'ai travaillé sur différents sujets:</p></div>
+</div>
             <ul>
                 <!--IA, répertorie le bouton (qui est un lien <a> relié à un htlm) sous le classement "button" ainsi que sous l'id "ia-button"--> 
 
@@ -61,8 +78,6 @@
                     <button id="html-css-button" type="button"><a href="eliott_html_css.html">Html/CSS</a></button>
             </ul>
 
-<button id="mon-bouton-like" class="btn">❤ J'aime (0)</button>
-
 </section>
 
 
@@ -72,5 +87,6 @@
 <!-- lie le fichier JavaScript eliott_script.js avec eliott.html -->
 <script src="eliott_script.js"></script>
 </body>
+
 
 </html>
