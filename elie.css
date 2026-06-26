@@ -1,0 +1,137 @@
+h1 {
+    font-family: star5, monospace;
+}
+
+h2 {
+     font-family: star5, monospace;
+}
+
+h3 {
+     font-family: star5, monospace;
+}
+
+h4 {
+     font-family: star5, monospace;
+}
+h6 {
+     font-family: star5, monospace;
+}
+p {
+     text-align: left;
+}
+img {
+    width: 200px;
+    border-radius: 15px;
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+
+
+}
+section {
+    background-color: rgb(129, 55, 55);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    width: 90%;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.dark .card {
+    background-color: #222;
+    color: white;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+button {
+    padding: 10px 20px;
+    background: rgb(0, 0, 0);
+    color: rgb(240, 239, 239);
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.2);
+    background: rgb(0, 0, 0);
+}
+.speed-mode {
+    animation: shake 0.3s ;
+}
+
+@keyframes shake {
+    0% { transform: translate(0px, 0px); }
+    25% { transform: translate(2px, -2px); }
+    50% { transform: translate(-2px, 2px); }
+    75% { transform: translate(2px, 2px); }
+    100% { transform: translate(-2px, -2px); }
+}
+@keyframes speedMove {
+    0% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(-5px); }
+}
+
+.f1-active {
+    animation: speedMove 0.1s infinite;
+}
+
+body {
+    margin-bottom: 20px;
+     color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: url("Sans\ titre.png"), auto;
+    transition: background 0.5s;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+#barre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: rgb(121, 107, 107);
+    width: 0%;
+}
+#f1-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, red, black);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+#f1-overlay.active {
+    opacity: 0.
+}
+
